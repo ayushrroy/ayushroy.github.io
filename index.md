@@ -1,23 +1,124 @@
-# Ayush Roy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ayush Roy</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
 
-Hi 👋 I'm Ayush. I work on:
-- Real-time XR / VR systems (Quest Pro, Unity, gaze-based interaction)
-- Rail maintenance AI (fluorescence sensing, Jetson Orin, signal processing)
-- Automation / dashboards for operations and analytics
+  <!-- top header bar -->
+  <div class="header-bar">
+    <div class="header-left">Ayush Roy</div>
+    <div class="header-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#contact">Contact</a>
+      <!-- later you can add <a href="Ayush_Roy_CV.pdf">CV</a> -->
+    </div>
+  </div>
 
-## Projects
+  <main class="main">
 
-**Rail Lubricity Monitoring**  
-Built a pipeline that reads fluorescence signals from grease on rails, classifies them into green / yellow / red lubrication levels, and visualizes track health in real time using edge compute.
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <div class="profile-col">
+        <img src="assets/profile.jpg" alt="Ayush Roy" class="profile-pic" />
+        <div class="profile-links">
+          <div>🔗 <a href="https://github.com/ayushrroy">GitHub</a></div>
+          <div>✉️ <a href="mailto:your_email_here">your_email_here</a></div>
+          <!--
+          <div><a href="https://scholar.google.com/...">Google Scholar</a></div>
+          <div><a href="https://www.linkedin.com/in/...">LinkedIn</a></div>
+          -->
+        </div>
+      </div>
 
-**Quadra — Collaborative XR Analytics Workspace**  
-Unity + VR environment for exploring documents, clusters, and notes in 3D. Lets multiple people analyze info together in VR instead of on a 2D screen.
+      <div class="about-col">
+        <h1>About</h1>
 
-**Process Automation & Internal Tools**  
-Built internal dashboards and data flows to cut manual data entry and make reports self-serve.
+        <p>
+          Hi 👋 I'm Ayush. I work on real-time XR / VR systems,
+          rail maintenance AI, and automation for ops analytics.
+        </p>
 
-## Contact
+        <p>
+          I build:
+        </p>
 
-GitHub: https://github.com/ayushrroy  
-Email: your_email_here  
-Resume: (PDF link coming soon)
+        <ul style="margin-top:0;margin-bottom:12px;font-size:15px;padding-left:20px;">
+          <li>Real-time XR / VR systems (Quest Pro, Unity, gaze-based interaction)</li>
+          <li>Rail maintenance AI (fluorescence sensing, Jetson Orin, signal processing)</li>
+          <li>Automation / dashboards for operations and analytics</li>
+        </ul>
+
+        <p>
+          I care about taking messy physical-world signals
+          (sensors, maintenance data, human attention in VR)
+          and turning them into something you can act on
+          <strong>right now</strong>, not after a report next week.
+        </p>
+      </div>
+    </section>
+
+    <!-- TIMELINE SECTION -->
+    <section id="timeline">
+      <div class="section-title">Timeline</div>
+      <ul class="timeline-list">
+        <li><strong>2025:</strong> Built an end-to-end rail lubrication monitoring pipeline using fluorescence sensing + edge compute, aiming for real-time maintenance decisions in the field.</li>
+        <li><strong>2025:</strong> Prototyped multi-user VR analytics workspace so teams can explore documents, clusters, and notes together in 3D instead of screen-sharing slides.</li>
+        <li><strong>2024:</strong> Built internal dashboards and automated data flows that cut manual reporting / data entry and let non-technical teams self-serve analytics.</li>
+        <!-- Add more milestones like publications, internships, awards, etc. -->
+      </ul>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <div class="section-title">Projects</div>
+
+      <div class="project-block">
+        <div class="project-title">Rail Lubricity Monitoring</div>
+        <p class="project-desc">
+          Built a pipeline that reads fluorescence signals from grease on rails,
+          classifies them into green / yellow / red lubrication levels,
+          and visualizes track health in real time using edge compute.
+        </p>
+      </div>
+
+      <div class="project-block">
+        <div class="project-title">Quadra — Collaborative XR Analytics Workspace</div>
+        <p class="project-desc">
+          Unity + VR environment for exploring documents, clusters, and notes in 3D.
+          Lets multiple people analyze info together in VR instead of on a 2D screen.
+        </p>
+      </div>
+
+      <div class="project-block">
+        <div class="project-title">Process Automation &amp; Internal Tools</div>
+        <p class="project-desc">
+          Built internal dashboards and data flows to cut manual data entry
+          and make reports self-serve.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="section-title">Contact</div>
+      <div class="contact-block">
+        <div><strong>GitHub:</strong> <a href="https://github.com/ayushrroy">https://github.com/ayushrroy</a></div>
+        <div><strong>Email:</strong> <a href="mailto:your_email_here">your_email_here</a></div>
+        <div><strong>Resume:</strong> coming soon (PDF)</div>
+      </div>
+    </section>
+
+    <div class="footer-note">
+      ayushrroy.github.io is maintained by Ayush Roy.  
+      This page is generated by GitHub Pages.
+    </div>
+
+  </main>
+</body>
+</html>

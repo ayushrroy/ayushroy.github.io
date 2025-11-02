@@ -8,116 +8,149 @@
 </head>
 <body>
 
-  <!-- top header bar -->
-  <div class="header-bar">
-    <div class="header-left">Ayush Roy</div>
-    <div class="header-links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#timeline">Timeline</a>
-      <a href="#contact">Contact</a>
-      <!-- later you can add <a href="Ayush_Roy_CV.pdf">CV</a> -->
+  <!-- Top purple header bar -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="site-name">Ayush Roy</div>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#contact">Contact</a>
+        <!-- <a href="Ayush_Roy_CV.pdf">CV</a> -->
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <main class="main">
+  <!-- Main page content -->
+  <main class="page">
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about-section">
-      <div class="profile-col">
-        <img src="assets/image_1.jpg" alt="Ayush Roy" class="profile-pic" />
-        <div class="profile-links">
-          <div>🔗 <a href="https://github.com/ayushrroy">GitHub</a></div>
-          <div>✉️ <a href="mailto:your_email_here">your_email_here</a></div>
-          <!--
-          <div><a href="https://scholar.google.com/...">Google Scholar</a></div>
-          <div><a href="https://www.linkedin.com/in/...">LinkedIn</a></div>
+    <!-- ABOUT + TIMELINE WRAPPER (2-column layout like screenshot) -->
+    <section id="about" class="about-wrap">
+
+      <!-- left column = profile image + links -->
+      <div class="left-col">
+        <img src="assets/image.jpg" alt="Ayush Roy" class="pfp" />
+
+        <div class="social-block">
+          <div class="social-line">
+            <span class="icon">🌐</span>
+            <a href="https://github.com/ayushrroy" class="social-link">GitHub</a>
+          </div>
+
+          <div class="social-line">
+            <span class="icon">✉️</span>
+            <a href="mailto:your_email_here" class="social-link">your_email_here</a>
+          </div>
+
+          <!-- uncomment / update when you’re ready
+          <div class="social-line">
+            <span class="icon">in</span>
+            <a href="https://www.linkedin.com/in/..." class="social-link">LinkedIn</a>
+          </div>
+
+          <div class="social-line">
+            <span class="icon">G</span>
+            <a href="https://scholar.google.com/..." class="social-link">Google Scholar</a>
+          </div>
           -->
         </div>
       </div>
 
-      <div class="about-col">
-        <h1>About</h1>
+      <!-- right column = About text + Timeline heading + bullet list -->
+      <div class="right-col">
 
-        <p>
+        <h1 class="section-heading">About</h1>
+
+        <p class="about-text">
           Hi 👋 I'm Ayush. I work on real-time XR / VR systems,
-          rail maintenance AI, and automation for ops analytics.
+          rail maintenance AI, and automation for operations analytics.
         </p>
 
-        <p>
+        <p class="about-text">
           I build:
         </p>
 
-        <ul style="margin-top:0;margin-bottom:12px;font-size:15px;padding-left:20px;">
+        <ul class="about-list">
           <li>Real-time XR / VR systems (Quest Pro, Unity, gaze-based interaction)</li>
           <li>Rail maintenance AI (fluorescence sensing, Jetson Orin, signal processing)</li>
           <li>Automation / dashboards for operations and analytics</li>
         </ul>
 
-        <p>
+        <p class="about-text">
           I care about taking messy physical-world signals
           (sensors, maintenance data, human attention in VR)
           and turning them into something you can act on
           <strong>right now</strong>, not after a report next week.
         </p>
+
+        <!-- Timeline lives directly under About, same column -->
+        <h2 id="timeline" class="section-heading">Timeline</h2>
+
+        <ul class="timeline-list">
+          <li><strong>2025:</strong> Built an end-to-end rail lubrication monitoring pipeline using fluorescence sensing + edge compute, aiming for real-time maintenance decisions in the field.</li>
+          <li><strong>2025:</strong> Prototyped multi-user VR analytics workspace so teams can explore documents, clusters, and notes together in 3D instead of screensharing slides.</li>
+          <li><strong>2024:</strong> Built internal dashboards and automated data flows that cut manual reporting / data entry and let non-technical teams self-serve analytics.</li>
+        </ul>
+
       </div>
     </section>
 
-    <!-- TIMELINE SECTION -->
-    <section id="timeline">
-      <div class="section-title">Timeline</div>
-      <ul class="timeline-list">
-        <li><strong>2025:</strong> Built an end-to-end rail lubrication monitoring pipeline using fluorescence sensing + edge compute, aiming for real-time maintenance decisions in the field.</li>
-        <li><strong>2025:</strong> Prototyped multi-user VR analytics workspace so teams can explore documents, clusters, and notes together in 3D instead of screen-sharing slides.</li>
-        <li><strong>2024:</strong> Built internal dashboards and automated data flows that cut manual reporting / data entry and let non-technical teams self-serve analytics.</li>
-        <!-- Add more milestones like publications, internships, awards, etc. -->
-      </ul>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-      <div class="section-title">Projects</div>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-wrap">
+      <h2 class="section-heading">Projects</h2>
 
       <div class="project-block">
         <div class="project-title">Rail Lubricity Monitoring</div>
-        <p class="project-desc">
+        <div class="project-desc">
           Built a pipeline that reads fluorescence signals from grease on rails,
           classifies them into green / yellow / red lubrication levels,
           and visualizes track health in real time using edge compute.
-        </p>
+        </div>
       </div>
 
       <div class="project-block">
         <div class="project-title">Quadra — Collaborative XR Analytics Workspace</div>
-        <p class="project-desc">
+        <div class="project-desc">
           Unity + VR environment for exploring documents, clusters, and notes in 3D.
           Lets multiple people analyze info together in VR instead of on a 2D screen.
-        </p>
+        </div>
       </div>
 
       <div class="project-block">
         <div class="project-title">Process Automation &amp; Internal Tools</div>
-        <p class="project-desc">
+        <div class="project-desc">
           Built internal dashboards and data flows to cut manual data entry
           and make reports self-serve.
-        </p>
+        </div>
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-      <div class="section-title">Contact</div>
-      <div class="contact-block">
-        <div><strong>GitHub:</strong> <a href="https://github.com/ayushrroy">https://github.com/ayushrroy</a></div>
-        <div><strong>Email:</strong> <a href="mailto:your_email_here">your_email_here</a></div>
-        <div><strong>Resume:</strong> coming soon (PDF)</div>
-      </div>
+    <!-- CONTACT -->
+    <section id="contact" class="contact-wrap">
+      <h2 class="section-heading">Contact</h2>
+
+      <p class="contact-line">
+        <strong>GitHub:</strong>
+        <a href="https://github.com/ayushrroy" class="contact-link">https://github.com/ayushrroy</a>
+      </p>
+
+      <p class="contact-line">
+        <strong>Email:</strong>
+        <a href="mailto:your_email_here" class="contact-link">your_email_here</a>
+      </p>
+
+      <p class="contact-line">
+        <strong>Resume:</strong>
+        coming soon (PDF)
+      </p>
     </section>
 
-    <div class="footer-note">
-      ayushrroy.github.io is maintained by Ayush Roy.  
+    <!-- FOOTER -->
+    <footer class="footer-note">
+      ayushrroy.github.io is maintained by Ayush Roy.
       This page is generated by GitHub Pages.
-    </div>
+    </footer>
 
   </main>
 </body>

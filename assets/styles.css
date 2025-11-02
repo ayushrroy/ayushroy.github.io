@@ -1,0 +1,171 @@
+/* Page base */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+/* Top nav bar */
+.header-bar {
+  background-color: #4f46e5; /* indigo-ish like screenshot bar */
+  color: white;
+  padding: 12px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  font-size: 15px;
+}
+
+.header-left {
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+}
+
+.header-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  margin-right: 16px;
+}
+
+.header-links a:hover {
+  text-decoration: underline;
+}
+
+/* Main content wrapper */
+.main {
+  max-width: 900px;
+  margin: 32px auto 80px auto;
+  padding: 0 16px;
+}
+
+/* Section layout: photo + about */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+  margin-bottom: 48px;
+}
+
+.profile-col {
+  flex: 0 0 220px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 1000px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+  margin-bottom: 12px;
+}
+
+.profile-links {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.profile-links a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.profile-links a:hover {
+  text-decoration: underline;
+}
+
+/* Text column */
+.about-col {
+  flex: 1 1 400px;
+  min-width: 280px;
+}
+
+.about-col h1 {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-col p {
+  font-size: 15px;
+  margin: 0 0 12px 0;
+}
+
+/* Section title like "Timeline" */
+.section-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 48px 0 16px 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+  color: #1a1a1a;
+}
+
+/* Timeline list */
+.timeline-list {
+  font-size: 15px;
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+.timeline-list li {
+  margin-bottom: 8px;
+}
+
+/* Subsection headers in about (like mini headline lines) */
+.subheadline {
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+/* Project block */
+.project-block {
+  margin-bottom: 16px;
+}
+
+.project-block .project-title {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.project-block .project-desc {
+  font-size: 15px;
+  margin: 0;
+  color: #444;
+}
+
+/* Contact area */
+.contact-block {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.contact-block a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.contact-block a:hover {
+  text-decoration: underline;
+}
+
+/* Tiny footer */
+.footer-note {
+  font-size: 12px;
+  color: #666;
+  margin-top: 64px;
+  text-align: left;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+}
